@@ -1,0 +1,24 @@
+.header {
+  display: flex;
+  justify-content: space-around;
+  padding: 16px;
+  background-color: #fff;
+}
+
+.header-links-container {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: max-content;
+  grid-gap: 60px;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.header-link {
+  display: inline-block;
+}
+
+.header-link a {
+  text-decoration: none;
+  color: #1f2737;
+}

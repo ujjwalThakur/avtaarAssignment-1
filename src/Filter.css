@@ -1,0 +1,108 @@
+.filter {
+  margin-right: 24px;
+  position: relative;
+  background-color: #fff;
+  color: #606060;
+  cursor: pointer;
+}
+.label {
+  display: flex;
+  width: max-content;
+  min-width: 156px;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #b8b298;
+  padding: 12px 20px;
+  border-radius: 8px;
+}
+.label .label-text {
+  display: inline-block;
+  width: max-content;
+  margin-right: 10px;
+}
+.label .arrow {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  overflow: hidden;
+  transform-origin: 50% 25%;
+  transform: translateY(5px);
+  transition: transform 0.25s ease-in;
+}
+.label .arrow.up {
+  transform: translateY(5px) rotateX(180deg);
+}
+.arrow::before {
+  content: " ";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  background-color: #606060;
+  margin: auto;
+  transform: translateY(-5px) rotateZ(45deg);
+}
+
+.filter-modal {
+  position: absolute;
+  top: 52px;
+  width: 345px;
+  background-color: #ffffff;
+  max-height: 600px;
+  z-index: 20;
+  border-radius: 8px;
+  box-shadow: 0px 2px 20px rgba(96, 96, 96, 0.4);
+  transition: max-height 0.25s ease-in;
+  overflow: hidden;
+}
+.filter-modal.hidden {
+  max-height: 0;
+}
+.filter-modal-border-box {
+  border: 1px solid #f2eeda;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.filter-modal .options {
+  max-height: 400px;
+  overflow-y: auto;
+}
+.options::-webkit-scrollbar {
+  width: 4px;
+}
+.options::-webkit-scrollbar-thumb {
+  background-color: #f2eeda;
+}
+.filter-modal input {
+  margin: 8px;
+}
+
+.filter-modal .sub-option {
+  margin: 8px 8px 8px 16px;
+}
+
+.filter-modal hr {
+  border: none;
+  height: 1px;
+  background-color: #f2eeda;
+  margin: 24px 0 16px 0;
+}
+.filter-modal .btn-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.filter-modal .btn-container button {
+  outline: none;
+  border: none;
+}
+.apply-btn {
+  padding: 12px 40px;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #7a62f8 0%, #630bff 100%);
+}
+.clear-btn {
+  padding: 8px;
+  background-color: #fff;
+}

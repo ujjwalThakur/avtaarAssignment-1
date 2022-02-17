@@ -1,0 +1,19 @@
+.filtertag {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  padding: 15px;
+  margin: 0 16px 16px 0;
+  background-color: #f2eeda;
+  color: #606060;
+  border: 1px solid #b8b298;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+.filtertag-cross {
+  width: 15px;
+  height: 15px;
+  margin-left: 20px;
+  position: relative;
+  cursor: pointer;
+}

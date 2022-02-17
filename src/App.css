@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+.app {
+  background-color: #fffcef;
+  min-width: 1144px;
+  min-height: 100vh;
+}
+
+.main {
+  width: fit-content;
+  margin: auto;
+  min-width: 1144px;
+}
+.main > h1 {
+  margin: 40px auto;
+}
+
+.profiles-container {
+  display: grid;
+  grid-template-columns: min-content min-content;
+  grid-gap: 32px 24px;
+  margin-bottom: 10px;
+}
+
+.filters-container {
+  display: flex;
+  margin: 24px auto;
+}
+
+.filtertag-container {
+  margin-bottom: 8px;
+}
