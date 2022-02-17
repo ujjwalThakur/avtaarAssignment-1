@@ -35,22 +35,25 @@ function App() {
         const topAreas = profile.topAreas.join(' ')
         const year = profile.year
         const place = profile.place
-        let flag1 = false, flag2 = false, flag3 = false;
+        let flag1 = true, flag2 = true, flag3 = true;
         for (let p of filters.place)
           if (p.toLowerCase() == place.toLowerCase()) {
-            flag3 = true
+            flag1 = true
             break
           }
+          else flag1 = false
         for (let y of filters.year)          
           if (year.toLowerCase().includes(y.toLowerCase())) {
-            flag3 = true
+            flag2 = true
             break
           }
+          else flag2 = false
         for (let a of filters.career)
           if (topAreas.toLowerCase().includes(a.toLowerCase())) {
             flag3 = true
             break
           }
+          else flag3 = false
         return flag1 && flag2 && flag3
       })
       console.log(filteredProfiles)
